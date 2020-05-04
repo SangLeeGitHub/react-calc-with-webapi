@@ -23,16 +23,16 @@ class App extends React.Component {
 
   render() {
     return (
-        <div className="row-wrapper">
-          <div className="name">
+        <div className="container">
+          <div>
             <span>React Calculator</span>
           </div>
 
           <input className="display" value={this.state.input} />
-          <div className="row">{this.createRow([9, 8, 7, "*"])}</div>
-          <div className="row">{this.createRow([6, 5, 4, "+"])}</div>
-          <div className="row">{this.createRow([3, 2, 1, "-"])}</div>
-          <div className="row">{this.createRow([0, ".", "=", "/"])}</div>
+          <div className="buttonWrap">{this.createRow([9, 8, 7, "*"])}</div>
+          <div className="buttonWrap">{this.createRow([6, 5, 4, "+"])}</div>
+          <div className="buttonWrap">{this.createRow([3, 2, 1, "-"])}</div>
+          <div className="buttonWrap">{this.createRow([0, ".", "=", "/"])}</div>
         </div>
     );
   }
